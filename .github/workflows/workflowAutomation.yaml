@@ -22,6 +22,13 @@ jobs:
 
       - name: write to a file
         run : cd root && curl https://api.github.com/users/Sassyprogrammer1/repos  >> output.txt   
+        
+      - name: Screenshot code
+        uses: swinton/screenshot-website@v1.x
+        with: 
+          source: https://github.com/swinton/screenshot-website
+          destination: screenshot.png
+          full-page: true 
              
       - name: Commit files # commit the output folder
         run: |
@@ -36,12 +43,7 @@ jobs:
           github_token: '93a78fdb6cc71b4055d1402f4e39b29e24e5a71b'
           force: true
 
-      - name: Screenshot code
-        uses: swinton/screenshot-website@v1.x
-        with: 
-          source: https://github.com/swinton/screenshot-website
-          destination: screenshot.png
-          full-page: true 
+      
       
 
       
