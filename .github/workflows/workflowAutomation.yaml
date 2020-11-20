@@ -17,11 +17,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       
-      - name: check directory
-        run: cd root
-
-      - name: remove file
-        run: rm output.txt
+      - name: check directory and delete file
+        run: cd root && rm output.txt
 
       - name: Commit files # commit the output folder
         run: |
