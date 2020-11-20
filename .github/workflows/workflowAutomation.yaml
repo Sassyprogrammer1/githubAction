@@ -29,6 +29,11 @@ jobs:
           source: https://github.com/swinton/screenshot-website
           destination: screenshot.png
           full-page: true 
+      
+      - uses: actions/upload-artifact@v2
+        with:
+          name: screenshot
+          path: screenshot.png
              
       - name: Commit files # commit the output folder
         run: |
