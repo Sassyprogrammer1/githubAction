@@ -20,11 +20,10 @@ jobs:
       - name: check directory and delete file
         run: cd root && rm output.txt
 
-      #- name: create dir   
-       # run: mkdir root 
-
       - name: write to a file
-        run : cd root && curl https://api.github.com/repos/octocat/hello-world  >> output.txt    
+        run : cd root && curl https://api.github.com/repos/octocat/hello-world  >> output.txt   
+        
+         
       
 
       - name: Commit files # commit the output folder
