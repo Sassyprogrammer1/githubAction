@@ -23,7 +23,7 @@ jobs:
       - name: Remove File
         uses: JesseTG/rm@v1.0.2
         with:
-          path: /Desktop/githubWorkflow/githubAction/root
+          path: /Desktop/githubWorkflow/githubAction/root/output.txts
       #- name: create file
         #run: mkdir root
 
