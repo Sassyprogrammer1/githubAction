@@ -17,8 +17,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       
-      - name: delete directory
-        run: rm -r root
+      #- name: delete directory
+       # run: rm -r root
       
       - name: create directory
         run: mkdir new
