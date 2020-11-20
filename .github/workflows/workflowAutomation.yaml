@@ -20,11 +20,11 @@ jobs:
       #- name: delete directory
        # run: rm -r root
       
-      - name: check directory  
-        run: cd githubAction
-
       - name: create directory
         run: mkdir root
+
+      - name: check directory  
+        run: cd root
 
       
 
