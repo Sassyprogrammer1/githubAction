@@ -17,14 +17,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       
-      #- name: delete directory
-       # run: rm -r root
-      
-      - name: create directory
-        run: mkdir root
-
-      - name: check directory  
+      - name: check directory
         run: cd root
+
+      - name: delete file
+        run: rm output.txt 
+      
+      #- name: create file
+        #run: mkdir root
+
+      #- name: check directory  
+       # run: cd root
 
       
 
