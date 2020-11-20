@@ -26,7 +26,7 @@ jobs:
       - name: Screenshot code
         uses: swinton/screenshot-website@v1.x
         with: 
-          source: https://github.com/swinton/screenshot-website
+          source: https://github.com/Sassyprogrammer1/githubAction/blob/main/root/output.txt
           destination: screenshot.png
           full-page: true 
       
