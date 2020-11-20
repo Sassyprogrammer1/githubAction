@@ -1,0 +1,26 @@
+name: gitWorkFlow
+
+# Run this workflow every time a new commit pushed to your repository
+on: push
+
+jobs:
+  # Set the job key. The key is displayed as the job name
+  # when a job name is not provided
+  super-lint:
+    # Name the Job
+    name: workAutomation
+    # Set the type of machine to run on
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: create directory
+        run: rm -r root
+        run: mkdir root
+        run: cd root
+       # run: curl \-H "Accept: application/vnd.github.v3+json" \https://api.github.com/repos/octocat/hello-world  -o myfile.txt
+
+        
