@@ -21,13 +21,13 @@ jobs:
         run: rm -r root
       
       - name: create directory
-        run: mkdir root
+        run: mkdir new
 
       - name: check directory  
         run: cd root
 
-      - name: write to a file   
-        run: curl \-H "Accept: application/vnd.github.v3+json" \https://api.github.com/repos/octocat/hello-world  -o newfile.txt  
+      #- name: write to a file   
+       # run: curl \-H "Accept: application/vnd.github.v3+json" \https://api.github.com/repos/octocat/hello-world  -o newfile.txt  
       
       
        # run: 
