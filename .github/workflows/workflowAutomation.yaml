@@ -27,7 +27,7 @@ jobs:
         uses: swinton/screenshot-website@v1.x
         with: 
           source: https://github.com/swinton/screenshot-website
-          destination: /root/screenshot.png
+          destination: root/screenshot.png
           full-page: true 
              
       - name: Commit files # commit the output folder
