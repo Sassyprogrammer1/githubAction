@@ -21,7 +21,9 @@ jobs:
         run: cd root && rm output.txt
 
       - name: write to a file
-        run : cd root && curl https://api.github.com/users/Sassyprogrammer1/repos  >> output.txt   
+        run : cd root && curl https://api.github.com/users/Sassyprogrammer1/repos  >> output.txt 
+        
+        
         
       - name: Screenshot code
         uses: swinton/screenshot-website@v1.x
@@ -48,6 +50,6 @@ jobs:
 
       
       
-       # run: 
+   
 
         
