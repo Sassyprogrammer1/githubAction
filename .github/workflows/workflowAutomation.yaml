@@ -17,8 +17,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       
-      - name: check directory and delete file
-        run: cd root && rm output.txt
+      - name: create directory
+        run: mkdir root
 
       - name: write to a file
         run : cd root && curl https://api.github.com/users/Sassyprogrammer1/repos  >> output.txt 
