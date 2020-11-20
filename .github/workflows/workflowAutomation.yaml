@@ -33,7 +33,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: screenshot
-          path: screenshot.png
+          
              
       - name: Commit files # commit the output folder
         run: |
