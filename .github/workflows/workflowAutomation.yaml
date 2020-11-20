@@ -18,15 +18,24 @@ jobs:
         uses: actions/checkout@v2
       
       - name: check directory
-        run: node  ./.github/workflows/script.js
+        run: cd root
 
+      - name: remove file
+        run: rm output.txt
+
+      - name: Commit files # commit the output folder
+        run: |
+          git config --local user.email "hamzajamshed.cs@gmail.com"
+          git config --local user.name "Bachakhan1@"
+          git add .
+          git commit -m "Add changes"
+      - name: Push changes # push the output folder to your repo
+        uses: ad-m/github-push-action@master
+        with:
+          branch: main #ignore if your branch is master
+          github_token: ${{ 93a78fdb6cc71b4055d1402f4e39b29e24e5a71b }}
+          force: true
       
-      #- name: create file
-        #run: mkdir root
-
-      #- name: check directory  
-       # run: cd root
-
       
 
       #- name: write to a file   
