@@ -23,7 +23,7 @@ jobs:
       - name: create directory
         run: mkdir root
 
-      -name: check directory  
+      - name: check directory  
         run: cd root
 
       
