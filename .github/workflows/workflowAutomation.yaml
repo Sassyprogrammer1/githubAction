@@ -21,7 +21,7 @@ jobs:
        # run: rm -r root
       
       - name: create directory
-        run: mkdir new
+        run: mkdir root
 
       - name: check directory  
         run: cd root
