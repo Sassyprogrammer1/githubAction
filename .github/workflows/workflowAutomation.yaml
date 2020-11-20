@@ -29,11 +29,6 @@ jobs:
           source: https://github.com/Sassyprogrammer1/githubAction/blob/main/root/output.txt
           destination: screenshot.png
           full-page: true 
-      
-      - uses: actions/upload-artifact@v2
-        with:
-          name: screenshot
-          
              
       - name: Commit files # commit the output folder
         run: |
