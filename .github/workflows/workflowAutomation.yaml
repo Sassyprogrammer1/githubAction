@@ -17,10 +17,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       
-      - name: create directory
+      - name: delete directory
         run: rm -r root
+      
+      - name: create directory
         run: mkdir root
+
+      -name: check directory  
         run: cd root
+
+      
        # run: curl \-H "Accept: application/vnd.github.v3+json" \https://api.github.com/repos/octocat/hello-world  -o myfile.txt
 
         
