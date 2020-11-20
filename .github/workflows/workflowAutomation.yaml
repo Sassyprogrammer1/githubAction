@@ -18,10 +18,9 @@ jobs:
         uses: actions/checkout@v2
       
       - name: check directory
-        run: cd root
+        run: cd root && rm output.txt 
 
-      - name: delete file
-        run: rm output.txt 
+      
       
       #- name: create file
         #run: mkdir root
