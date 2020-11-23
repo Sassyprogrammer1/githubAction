@@ -22,7 +22,7 @@ jobs:
       
       - uses: srt32/git-actions@v0.0.3
         with:
-          args: git diff --name-only HEAD~1
+          args: git reset --soft HEAD~1
 
       - uses: lots0logs/gh-action-get-changed-files@2.1.4
         with:
