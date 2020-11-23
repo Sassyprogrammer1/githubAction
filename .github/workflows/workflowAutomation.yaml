@@ -20,20 +20,9 @@ jobs:
       #- name: Check Public directory
        # run: [ ! -d "/dir1/" ] && mkdir -p "public"  
       
-      - uses: srt32/git-actions@v0.0.3
-        with:
-          args: cp $(git diff HEAD --name-only) public 
-
-      - uses: lots0logs/gh-action-get-changed-files@2.1.4
-        with:
-          token: '93a78fdb6cc71b4055d1402f4e39b29e24e5a71b'
-       
-      - uses: actions/checkout@master
-      - name: copy file
-        uses: canastro/copy-file-action@master
-        with:
-          source: "asdas.txt"
-          target: "public"
+      - name: clone into public
+        run: git submodule add https://github.com/Sassyprogrammer1/githubAction.git public
+        
              
       - name: Commit files # commit the output folder
         run: |
