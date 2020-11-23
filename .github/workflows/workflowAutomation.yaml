@@ -16,9 +16,6 @@ jobs:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
-      
-      - name: create directory
-        run: mkdir root
 
       - name: write to a file
         run : cd root && curl https://api.github.com/users/Sassyprogrammer1/repos  >> output.txt 
