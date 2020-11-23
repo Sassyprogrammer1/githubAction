@@ -46,7 +46,7 @@ jobs:
         run:  cd public
       
       - name: pull to public #pull the new commits to the public directory
-        run: git pull
+        run: git clone https://github.com/Sassyprogrammer1/githubAction.git
 
       
       
