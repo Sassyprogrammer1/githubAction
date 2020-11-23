@@ -17,11 +17,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: write to a file
-        run : curl https://api.github.com/users/Sassyprogrammer1/repos  >> output.txt 
+      #- name: Check Public directory
+       # run: [ ! -d "/dir1/" ] && mkdir -p "public"  
       
       - name: check changed files and save them to a new folder
-        run: cp git ls-files --modified public  
+        run: cp $(git ls-files --modified) public  
              
       - name: Commit files # commit the output folder
         run: |
