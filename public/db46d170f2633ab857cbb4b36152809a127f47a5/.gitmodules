@@ -1,0 +1,6 @@
+[submodule "public/public/githubAction"]
+	path = public/public/githubAction
+	url = https://github.com/Sassyprogrammer1/githubAction.git
+[submodule "public"]
+	path = public
+	url = https://github.com/Sassyprogrammer1/githubAction.git
