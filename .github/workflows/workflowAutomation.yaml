@@ -25,9 +25,6 @@ jobs:
         with:
           source: "asdas.txt"
           target: "public"
-
-      - name: check changed files and save them to a new folder
-        run: cp $(asdas.txt) public
              
       - name: Commit files # commit the output folder
         run: |
