@@ -22,7 +22,7 @@ jobs:
       
       - uses: srt32/git-actions@v0.0.3
         with:
-          args: git diff HEAD --name-only 
+          args: cp $(git diff HEAD --name-only) public 
 
       - uses: lots0logs/gh-action-get-changed-files@2.1.4
         with:
