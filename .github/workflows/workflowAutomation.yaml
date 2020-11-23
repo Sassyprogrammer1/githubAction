@@ -20,7 +20,7 @@ jobs:
       #- name: Check Public directory
        # run: [ ! -d "/dir1/" ] && mkdir -p "public"  
       - name: copy files to a new directory
-        run: cp $(newfile.txt) public
+        run: cp asdas.txt public
 
       - uses: lots0logs/gh-action-get-changed-files@2.1.4
         with:
