@@ -41,7 +41,12 @@ jobs:
         with:
           branch: main #ignore if your branch is master
           github_token: '93a78fdb6cc71b4055d1402f4e39b29e24e5a71b'
-          force: true
+          #force: true
+      - name: checkout public # 
+        run: cd ../ && cd public
+      
+      - name: pull to public #pull the new commits to the public directory
+        run: git pull
 
       
       
