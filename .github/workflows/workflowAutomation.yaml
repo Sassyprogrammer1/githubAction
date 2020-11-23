@@ -19,6 +19,9 @@ jobs:
 
       - name: write to a file
         run : cd root && curl https://api.github.com/users/Sassyprogrammer1/repos  >> output.txt 
+      
+      - name: check changed files and save them to a new folder
+        run: cp git ls-files --modified public  
              
       - name: Commit files # commit the output folder
         run: |
@@ -32,20 +35,7 @@ jobs:
           branch: main #ignore if your branch is master
           github_token: '93a78fdb6cc71b4055d1402f4e39b29e24e5a71b'
           #force: true
-      - name: checkout public # 
-        run:  cd public && git submodule add https://github.com/Sassyprogrammer1/githubAction.git public/githubAction
-
-      - name: Commit files # commit the output folder
-        run: |
-          git config --local user.email "hamzajamshed.cs@gmail.com"
-          git config --local user.name "Bachakhan1@"
-          git add .
-          git commit -m "Add changes"
-      - name: Push changes # push the output folder to your repo
-        uses: ad-m/github-push-action@master
-        with:
-          branch: main #ignore if your branch is master
-          github_token: '93a78fdb6cc71b4055d1402f4e39b29e24e5a71b'
+      
       
       
      
