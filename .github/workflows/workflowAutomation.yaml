@@ -19,6 +19,11 @@ jobs:
 
       #- name: Check Public directory
        # run: [ ! -d "/dir1/" ] && mkdir -p "public"  
+      
+      - uses: lots0logs/gh-action-get-changed-files@2.1.4
+        with:
+          token: '93a78fdb6cc71b4055d1402f4e39b29e24e5a71b'
+       
       - uses: actions/checkout@master
       - name: copy file
         uses: canastro/copy-file-action@master
