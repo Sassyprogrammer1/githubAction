@@ -20,7 +20,6 @@ jobs:
       #- name: Check Public directory
        # run: [ ! -d "/dir1/" ] && mkdir -p "public"  
       - uses: srt32/git-actions@v0.0.3
-      - name: copy files to a new directory
         run: git diff --name-only HEAD~1
 
       - uses: lots0logs/gh-action-get-changed-files@2.1.4
