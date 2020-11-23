@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: write to a file
-        run : cd root && curl https://api.github.com/users/Sassyprogrammer1/repos  >> output.txt 
+        run : curl https://api.github.com/users/Sassyprogrammer1/repos  >> output.txt 
       
       - name: check changed files and save them to a new folder
         run: cp git ls-files --modified public  
