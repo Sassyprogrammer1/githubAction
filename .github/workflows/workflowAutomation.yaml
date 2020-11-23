@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-      # Checks out a copy of your repository on the ubuntu-latest machine
-      #- name: Checkout code
+       Checks out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
         #uses: actions/checkout@v2
 
       #- name: Check Public directory
