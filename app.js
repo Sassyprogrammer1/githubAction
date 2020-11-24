@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
-const path = require('path');
+var serveIndex = require('serve-index');
 
 app.use(express.static('public'))
+app.use('/public', serveIndex(__dirname + '/public'));
 
 app.listen(3000,(req,res)=>{
 

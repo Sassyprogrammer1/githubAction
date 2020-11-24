@@ -31,8 +31,8 @@ jobs:
              
       - name: Commit files # commit the output folder
         run: |
-          git config --local user.email "hamzajamshed.cs@gmail.com"
-          git config --local user.name "Bachakhan1@"
+          git config --local user.email ${{ secrets.userEmail }} 
+          git config --local user.name ${{ secrets.userName }} 
           git add .
           git commit -m "Add changes"
       - name: Push changes # push the output folder to your repo
